@@ -6,11 +6,13 @@ import Welcome from './components/Welcome'
 import Hello from './components/Hello'
 import Message from './components/Message'
 import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <FunctionClick />
         {/*<Counter />*/}
         {/*<Message />*/}
         {/*<Greet name="Bruce" heroName="Batman"><p>This is children </p></Greet>
@@ -20,8 +22,8 @@ class App extends Component {
         <Welcome name="Bruce" heroName="Batman"/>
         <Welcome name="Clark" heroName="Superman"/>
         */}
-        <Greet name="Diana" heroName="Wonder Woman"/>
-        <Welcome name="Diana" heroName="Wonder Woman"/>
+        {/*<Greet name="Diana" heroName="Wonder Woman"/>
+        <Welcome name="Diana" heroName="Wonder Woman"/>*/}
       </div>
     );
   }
