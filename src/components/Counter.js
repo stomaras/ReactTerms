@@ -48,4 +48,8 @@ class Counter extends Component {
     }
 }
 
+<<<<<<< HEAD
 export default Counter
+=======
+export default Counter
+>>>>>>> c9f7a3192f00ce4daa3804b2c6ad6dfb308a8048
