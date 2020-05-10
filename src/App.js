@@ -15,12 +15,16 @@ import NameList from './components/NameList'
 import Stylesheet from './components/Stylesheet'
 import Form from './components/Form'
 import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <LifecycleA />
+        <Table />
+        {/*<FragmentDemo />*/}
+        {/*<LifecycleA />*/}
         {/*<Form />*/}
         {/*<Stylesheet primary={false} />*/}
         {/*<NameList />*/}
