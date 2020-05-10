@@ -14,12 +14,14 @@ import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList'
 import Stylesheet from './components/Stylesheet'
 import Form from './components/Form'
+import LifecycleA from './components/LifecycleA';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Form />
+        <LifecycleA />
+        {/*<Form />*/}
         {/*<Stylesheet primary={false} />*/}
         {/*<NameList />*/}
         {/*<UserGreeting />/*}
