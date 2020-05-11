@@ -23,7 +23,9 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
 import MyComponent from './components/MyComponent';
-import CustomTextInput from './components/CustomTextInput'
+import CustomTextInput from './components/CustomTextInput';
+import AutoFocusTextInput from './components/AutoFocusTextInput'
+import PortalDemo from './components/PortalDemo';
 
 class App extends Component {
   
@@ -34,7 +36,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CustomTextInput />
+        <PortalDemo />
+        {/*<AutoFocusTextInput />*/}
+        {/*<CustomTextInput />*/}
         {/*<MyComponent />*/}
         {/*<FRParentInput />*/}
         {/*<FocusInput />*/}
