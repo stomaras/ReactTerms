@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WithCounter = WrappedComponent => {
+const WithCounter = (WrappedComponent, incrementNumber ) => {
     class WithCounter extends React.Component {
         constructor(props) {
             super(props)
@@ -12,7 +12,7 @@ const WithCounter = WrappedComponent => {
     
         incrementCount = () => {
             this.setState(prevState => {
-                return { count: prevState.count + 1 }
+                return { count: prevState.count + incrementNumber }
             })
         }
         render() {
@@ -20,6 +20,8 @@ const WithCounter = WrappedComponent => {
                 <WrappedComponent 
                     count={this.state.count} 
                     incrementCount={this.incrementCount}
+                    // So when you create HOC please make sure to pass down the rest of the props
+                    {...this.props}
                 />
             )
         }
