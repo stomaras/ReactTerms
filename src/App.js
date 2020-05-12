@@ -26,17 +26,31 @@ import MyComponent from './components/MyComponent';
 import CustomTextInput from './components/CustomTextInput';
 import AutoFocusTextInput from './components/AutoFocusTextInput'
 import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary'
+import ClickCounter from './components/ClickCounter';
 
 class App extends Component {
   
-  
-
-  
-
   render() {
     return (
+      
       <div className="App">
-        <PortalDemo />
+        <ClickCounter />
+        {/*}
+        <ErrorBoundary>
+          <Hero heroName="Batman"></Hero>
+        </ErrorBoundary>
+
+        <ErrorBoundary>
+          <Hero heroName="Spiderman"></Hero>
+        </ErrorBoundary>
+
+        <ErrorBoundary>
+          <Hero heroName="Joker"></Hero>
+    </ErrorBoundary>*/}
+
+        {/*<PortalDemo />*/}
         {/*<AutoFocusTextInput />*/}
         {/*<CustomTextInput />*/}
         {/*<MyComponent />*/}
