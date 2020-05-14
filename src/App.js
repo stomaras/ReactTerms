@@ -37,6 +37,7 @@ import Counterr from './components/Counterr'
 import ComponentC from './components/ComponentC'
 import { UserProvider } from './components/userContext'
 import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 
 
@@ -46,7 +47,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <PostList />
+        <PostForm />
+          {/*<PostList />*/}
         {/*<UserProvider value="Tom">
           <ComponentC />
     </UserProvider>*/}
