@@ -36,6 +36,7 @@ import User from './components/User';
 import Counterr from './components/Counterr'
 import ComponentC from './components/ComponentC'
 import { UserProvider } from './components/userContext'
+import PostList from './components/PostList';
 
 
 
@@ -45,10 +46,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-        <UserProvider value="Tom">
+          <PostList />
+        {/*<UserProvider value="Tom">
           <ComponentC />
-        </UserProvider>
+    </UserProvider>*/}
         
       
       {/*<div className="App">
